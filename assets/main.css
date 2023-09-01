@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'YS Text';
+    src: url(//yastatic.net/s3/home/fonts/ys/1/text-light.woff2) format('woff2'), url(//yastatic.net/s3/home/fonts/ys/1/text-light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal
+}
+@font-face {
+    font-family: 'YS Text';
+    src: url(//yastatic.net/s3/home/fonts/ys/1/text-medium.woff2) format('woff2'), url(//yastatic.net/s3/home/fonts/ys/1/text-medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal
+}
+body {
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 61px 0 0;
+    min-height: 600px;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+.funpedia-logo {
+    display: block;
+    margin: 0 auto 0;
+    max-width: 80vw;
+    user-select: none;
+    pointer-events: none;
+}
+.text-block {
+    margin: 32px auto 0;
+    max-width: 500px;
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.title {
+    font-weight: 500;
+}
+.text {
+    margin-top: 10px;
+    font-weight: 300;
+}
+.text a {
+    text-decoration: underline;
+    color: black;
+}
+.text a:hover {
+    opacity: 0.5;
+}
+
+.footer {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    bottom: 16px;
+    left: 30px;
+    right: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.footer a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer a:hover {
+    opacity: 0.5;
+}
+.footer-sel + .footer-unsel {
+    margin-left: 12px;
+}
+.footer-unsel + .footer-sel {
+    margin-left: 12px;
+}
+.footer-sel {
+    font-weight: 500;
+}
+.footer-unsel {
+    font-weight: 300;
+}
+@media (max-width: 500px) {
+    .text-block {
+        font-size: 3vw;
+        line-height: 4.5vw;
+    }
+    body {
+        min-height: 120vw;
+    }
+    .footer {
+        justify-content: flex-end;
+    }
+}
